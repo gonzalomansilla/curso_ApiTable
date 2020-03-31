@@ -1,0 +1,13 @@
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\Services\bin\Debug\netcoreapp3.1\Services.deps.json
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\Services\bin\Debug\netcoreapp3.1\Services.dll
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\Services\bin\Debug\netcoreapp3.1\Services.pdb
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\Services\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\Services\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\Services\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\Services\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.csprojAssemblyReference.cache
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfoInputs.cache
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfo.cs
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyComplete
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.dll
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.pdb
