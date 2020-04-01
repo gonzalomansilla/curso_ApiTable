@@ -41,8 +41,10 @@ namespace curso_ApiTable.Controllers
 
       var personAdded = await _tableService.AddPerson(person);
 
-      if (personAdded == null)
-        return BadRequest("El usuario ya existe");
+      if (personAdded.DNI == -1)
+        return Conflict("El usuario ya existe");
+      else if (personAdded == null)
+        return NotFound("Error desconocido al agregar datos en la Base de datos");
 
       return Ok(personAdded);
     }

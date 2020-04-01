@@ -26,22 +26,21 @@ namespace Services.Services
 
 		public async Task<Person> AddPerson(PersonDTO qPerson)
 		{
+			var personExist = await _myContext.Persons
+				.Where(p => p.DNI == qPerson.Dni)
+				.FirstOrDefaultAsync();
+
+			if (personExist != null)
+				return new Person() { DNI = -1 };
+
 			Person newPersonEntity = new Person() {
 				Name = qPerson.Name, 
 				DNI = qPerson.Dni,
 				SurName = qPerson.SurName
 			};
 
-			try
-			{
-				var state = await _myContext.Persons.AddAsync(newPersonEntity);
-				_myContext.SaveChanges();
-			}
-			catch (Exception e)
-			{
-				_logger.LogWarning($"Exception: {e.InnerException.Message}");
-				return null;
-			}
+			var state = await _myContext.Persons.AddAsync(newPersonEntity);
+			var save = _myContext.SaveChanges();
 
 			return newPersonEntity;
 		}
