@@ -4960,19 +4960,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gonzalo-net\\.nuget\\packages\\": {}
+    "C:\\Users\\Gonzalo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\Services\\Services.csproj",
-      "packagesPath": "C:\\Users\\gonzalo-net\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\Services\\obj\\",
+      "projectPath": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gonzalo-net\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gonzalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4985,11 +4985,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\gonzalo-net\\source\\repos\\Practica_Clase21_Api\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\gonzalo-net\\source\\repos\\Practica_Clase21_Api\\Common\\Common.csproj"
+            "C:\\Users\\Gonzalo\\Source\\Repos\\Practica_Clase21_Api\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\Gonzalo\\Source\\Repos\\Practica_Clase21_Api\\Common\\Common.csproj"
             },
-            "C:\\Users\\gonzalo-net\\source\\repos\\Practica_Clase21_Api\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\gonzalo-net\\source\\repos\\Practica_Clase21_Api\\Model\\Model.csproj"
+            "C:\\Users\\Gonzalo\\Source\\Repos\\Practica_Clase21_Api\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\Gonzalo\\Source\\Repos\\Practica_Clase21_Api\\Model\\Model.csproj"
             }
           }
         }
@@ -5017,7 +5017,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

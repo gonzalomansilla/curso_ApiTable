@@ -8383,19 +8383,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gonzalo-net\\.nuget\\packages\\": {}
+    "C:\\Users\\Gonzalo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\curso_ApiTable\\curso_ApiTable.csproj",
+      "projectUniqueName": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\curso_ApiTable\\curso_ApiTable.csproj",
       "projectName": "curso_ApiTable",
-      "projectPath": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\curso_ApiTable\\curso_ApiTable.csproj",
-      "packagesPath": "C:\\Users\\gonzalo-net\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\curso_ApiTable\\obj\\",
+      "projectPath": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\curso_ApiTable\\curso_ApiTable.csproj",
+      "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\curso_ApiTable\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gonzalo-net\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gonzalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8408,8 +8408,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\Services\\Services.csproj"
+            "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\Services\\Services.csproj"
             }
           }
         }
@@ -8450,7 +8450,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

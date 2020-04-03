@@ -23,8 +23,13 @@ namespace curso_ApiTable.Controllers
     }
 
     [HttpGet("GetPersons")]
-    public async Task<ActionResult> GetPersons()
+    public async Task<ActionResult> GetPersons(string token)
     {
+      if (token != null || token != "")
+      {
+        _logger.LogInformation($"Getpersons - User Active: {token}");
+      }
+
       var tablePersons = await _tableService.GetPersons();
 
       if (tablePersons == null)
@@ -50,7 +55,7 @@ namespace curso_ApiTable.Controllers
     }
 
     [HttpDelete("DeletePerson")]
-    public async Task<ActionResult> DeletePerson(string dniPerson)
+    public async Task<ActionResult> DeletePerson(string dniPerson, string token)
     {
       if (dniPerson == null || dniPerson == "")
         return BadRequest(new ResultJson()
