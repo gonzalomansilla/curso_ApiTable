@@ -7,74 +7,76 @@ using Services.Interfaces;
 
 namespace curso_ApiTable.Controllers
 {
-  [Route("api/Table")]
-  [ApiController]
-  [EnableCors("__curso__")]
-  public class TableController : ControllerBase
-  {
-    private ILogger<TableController> _logger;
-    private ITableService _tableService;
+	[Route("api/Table")]
+	[ApiController]
+	[EnableCors("__curso__")]
+	public class TableController : ControllerBase
+	{
+		private ILogger<TableController> _logger;
+		private ITableService _tableService;
+		private IApiCall _apiCall;
 
-    public TableController(ILogger<TableController> logger, ITableService tableService)
-    {
-      _logger = logger;
-      _tableService = tableService;
-      _logger.LogInformation("Constructor TableController");
-    }
+		public TableController(ILogger<TableController> logger, ITableService tableService, IApiCall apiCall)
+		{
+			_logger = logger;
+			_tableService = tableService;
+			_apiCall = apiCall;
+			_logger.LogInformation("Constructor TableController");
+		}
 
-    [HttpGet("GetPersons")]
-    public async Task<ActionResult> GetPersons(string token)
-    {
-      if (token != null || token != "")
-      {
-        _logger.LogInformation($"Getpersons - User Active: {token}");
-      }
+		[HttpGet("GetPersons")]
+		public async Task<ActionResult> GetPersons(string token)
+		{
+			bool isAutorized = await _apiCall.CheckUserAutorization(token);
 
-      var tablePersons = await _tableService.GetPersons();
+			if (!isAutorized)
+				return Unauthorized("La sesion a expirado. Vuelva a iniciar sesion.");
 
-      if (tablePersons == null)
-        return NotFound("No pudo obtenerse los datos");
+			var tablePersons = await _tableService.GetPersons();
 
-      return Ok(tablePersons);
-    }
+			if (tablePersons == null)
+				return NotFound("No pudo obtenerse los datos");
 
-    [HttpPut("AddPerson")]
-    public async Task<ActionResult> AddPerson([FromBody] PersonDTO person)
-    {
-      if (person.Name == "" || person.SurName == "" || person.Dni == 0)
-        return BadRequest("Verifique los datos a enviar");
+			return Ok(tablePersons);
+		}
 
-      var personAdded = await _tableService.AddPerson(person);
+		[HttpPut("AddPerson")]
+		public async Task<ActionResult> AddPerson([FromBody] PersonDTO person)
+		{
+			if (person.Name == "" || person.SurName == "" || person.Dni == 0)
+				return BadRequest("Verifique los datos a enviar");
 
-      if (personAdded.DNI == -1)
-        return Conflict("El usuario ya existe");
-      else if (personAdded == null)
-        return NotFound("Error desconocido al agregar datos en la Base de datos");
+			var personAdded = await _tableService.AddPerson(person);
 
-      return Ok(personAdded);
-    }
+			if (personAdded.DNI == -1)
+				return Conflict("El usuario ya existe");
+			else if (personAdded == null)
+				return NotFound("Error desconocido al agregar datos en la Base de datos");
 
-    [HttpDelete("DeletePerson")]
-    public async Task<ActionResult> DeletePerson(string dniPerson, string token)
-    {
-      if (dniPerson == null || dniPerson == "")
-        return BadRequest(new ResultJson()
-        {
-          Message = "No se detecto la persona a eliminar"
-        });
+			return Ok(personAdded);
+		}
 
-      int rowsAffected = await _tableService.DeletePerson(dniPerson);
+		[HttpDelete("DeletePerson")]
+		public async Task<ActionResult> DeletePerson(string dniPerson, string token)
+		{
+			if (dniPerson == null || dniPerson == "")
+				return BadRequest(new ResultJson()
+				{
+					Message = "No se detecto la persona a eliminar"
+				});
 
-      if (rowsAffected == 0)
-        return NotFound(new ResultJson()
-        {
-          Message = "No existe o no se pudo eliminar la persona"
-        });
+			int rowsAffected = await _tableService.DeletePerson(dniPerson);
 
-      return Ok(new ResultJson()
-      {
-        Message = $"La persona con DNI {dniPerson} se a eliminado."
-      });
-    }
-  }
+			if (rowsAffected == 0)
+				return NotFound(new ResultJson()
+				{
+					Message = "No existe o no se pudo eliminar la persona"
+				});
+
+			return Ok(new ResultJson()
+			{
+				Message = $"La persona con DNI {dniPerson} se a eliminado."
+			});
+		}
+	}
 }

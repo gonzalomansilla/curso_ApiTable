@@ -311,6 +311,15 @@
           }
         }
       },
+      "RestSharp/106.10.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "runtime.native.System/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1798,6 +1807,21 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "RestSharp/106.10.1": {
+      "sha512": "MhR4w8LbArVaRA5T/oAR3ZnF852QXtDXRBO84GsvyYzsm7FsjXHJ+JaM8x/nR/B/OCB1WbolGH7hqMT1GZpNJw==",
+      "type": "package",
+      "path": "restsharp/106.10.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.10.1.nupkg.sha512",
+        "restsharp.nuspec"
       ]
     },
     "runtime.native.System/4.3.0": {
@@ -4956,23 +4980,24 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Common >= 1.0.0",
-      "Model >= 1.0.0"
+      "Model >= 1.0.0",
+      "RestSharp >= 106.10.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gonzalo\\.nuget\\packages\\": {}
+    "C:\\Users\\gonzalo-net\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\Services\\Services.csproj",
-      "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\Services\\obj\\",
+      "projectPath": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\gonzalo-net\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Gonzalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gonzalo-net\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4985,11 +5010,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Gonzalo\\Source\\Repos\\Practica_Clase21_Api\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\Gonzalo\\Source\\Repos\\Practica_Clase21_Api\\Common\\Common.csproj"
+            "C:\\Users\\gonzalo-net\\source\\repos\\Practica_Clase21_Api\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\gonzalo-net\\source\\repos\\Practica_Clase21_Api\\Common\\Common.csproj"
             },
-            "C:\\Users\\Gonzalo\\Source\\Repos\\Practica_Clase21_Api\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\Gonzalo\\Source\\Repos\\Practica_Clase21_Api\\Model\\Model.csproj"
+            "C:\\Users\\gonzalo-net\\source\\repos\\Practica_Clase21_Api\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\gonzalo-net\\source\\repos\\Practica_Clase21_Api\\Model\\Model.csproj"
             }
           }
         }
@@ -5002,6 +5027,12 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "dependencies": {
+          "RestSharp": {
+            "target": "Package",
+            "version": "[106.10.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -5017,7 +5048,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
