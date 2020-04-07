@@ -256,3 +256,4 @@ C:\Users\Gonzalo\Source\Repos\curso_ApiTable\curso_ApiTable\obj\Debug\netcoreapp
 C:\Users\Gonzalo\Source\Repos\curso_ApiTable\curso_ApiTable\obj\Debug\netcoreapp3.1\staticwebassets\curso_ApiTable.StaticWebAssets.Manifest.cache
 C:\Users\Gonzalo\Source\Repos\curso_ApiTable\curso_ApiTable\obj\Debug\netcoreapp3.1\staticwebassets\curso_ApiTable.StaticWebAssets.xml
 C:\Users\Gonzalo\Source\Repos\curso_ApiTable\curso_ApiTable\obj\Debug\netcoreapp3.1\curso_ApiTable.genruntimeconfig.cache
+C:\Users\gonzalo-net\source\repos\curso_ApiTable\curso_ApiTable\bin\Debug\netcoreapp3.1\RestSharp.dll
