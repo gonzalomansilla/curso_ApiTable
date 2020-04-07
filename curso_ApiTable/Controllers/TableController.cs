@@ -27,7 +27,7 @@ namespace curso_ApiTable.Controllers
 		[HttpGet("GetPersons")]
 		public async Task<ActionResult> GetPersons(string token)
 		{
-			bool isAutorized = await _apiCall.CheckUserAutorization(token);
+			bool isAutorized = await _apiCall.UserIsAuthorized(token);
 
 			if (!isAutorized)
 				return Unauthorized("La sesion a expirado. Vuelva a iniciar sesion.");

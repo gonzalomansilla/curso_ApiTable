@@ -39,7 +39,7 @@ namespace curso_ApiTable
 
 			string connectionStringNotebook = this.Configuration.GetConnectionString("notebookDb");
 			string connectionStringPc = this.Configuration.GetConnectionString("LocalHostDb");
-			services.AddDbContext<MyContext>(options => options.UseSqlServer(connectionStringNotebook));
+			services.AddDbContext<MyContext>(options => options.UseSqlServer(connectionStringPc));
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

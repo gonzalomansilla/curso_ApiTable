@@ -845,7 +845,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -2595,6 +2595,7 @@
         "dependencies": {
           "Common": "1.0.0",
           "Model": "1.0.0",
+          "Newtonsoft.Json": "12.0.3",
           "RestSharp": "106.10.1"
         },
         "compile": {
@@ -3913,10 +3914,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/11.0.2",
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3939,8 +3940,9 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "NuGet.Frameworks/4.7.0": {
@@ -8408,19 +8410,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gonzalo-net\\.nuget\\packages\\": {}
+    "C:\\Users\\Gonzalo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\curso_ApiTable\\curso_ApiTable.csproj",
+      "projectUniqueName": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\curso_ApiTable\\curso_ApiTable.csproj",
       "projectName": "curso_ApiTable",
-      "projectPath": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\curso_ApiTable\\curso_ApiTable.csproj",
-      "packagesPath": "C:\\Users\\gonzalo-net\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\curso_ApiTable\\obj\\",
+      "projectPath": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\curso_ApiTable\\curso_ApiTable.csproj",
+      "packagesPath": "C:\\Users\\Gonzalo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\curso_ApiTable\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gonzalo-net\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gonzalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8433,8 +8435,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\gonzalo-net\\source\\repos\\curso_ApiTable\\Services\\Services.csproj"
+            "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\Services\\Services.csproj"
             }
           }
         }
@@ -8475,7 +8477,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

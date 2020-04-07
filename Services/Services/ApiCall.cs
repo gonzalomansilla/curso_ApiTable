@@ -1,4 +1,7 @@
-﻿using RestSharp;
+﻿using Model.Model;
+using Newtonsoft.Json;
+using RestSharp;
+using RestSharp.Serialization.Json;
 using Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -9,22 +12,34 @@ namespace Services.Services
 {
 	public class ApiCall : IApiCall
 	{
-		public async Task<bool> CheckUserAutorization(string token)
+		private const int MINUTES_EXPIRATION_TOKEN = 10;
+
+		public async Task<bool> UserIsAuthorized(string token)
 		{
-			var client = new RestClient("https://localhost:5001/api/LoginCrud/GetUser");
-			var request = new RestRequest(Method.GET)
-				.AddParameter("token", token, ParameterType.GetOrPost);
+			var client = new RestClient("https://localhost:5001");
+			var request = new RestRequest("/api/LoginCrud/GetUser")
+				.AddParameter("guid", token, ParameterType.GetOrPost);
 
 			IRestResponse response = await client.ExecuteAsync(request);
 
-			var user = response.Content;	//TODO Recibir el User	
+			User user;
+			if (response.IsSuccessful)
+				user = new JsonDeserializer().Deserialize<User>(response);
+			else
+				return false;
 
-			bool isAutorized = false;
+			if (user != null)
+			{
+				DateTimeOffset lastLoginDate = DateTimeOffset.Parse(user.LastLoginDate.ToString());
+				DateTimeOffset actualLoginDate = DateTime.Now;
 
-			//TODO: Logica de calculo expiracion de token
+				TimeSpan difference = actualLoginDate - lastLoginDate;
 
-			return isAutorized;
+				if (difference.TotalMinutes < MINUTES_EXPIRATION_TOKEN) return true;
+			}
 
+			return false;
 		}
+
 	}
 }

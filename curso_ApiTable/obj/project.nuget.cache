@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EM+FFffqnYDW48qwGTGnF5Dq9iEGs0/0ZPFwKcQl1DJO2kEGOCfYramfiHkMGr94CN1tueaZbp7PFnvcGxO/Fg==",
+  "dgSpecHash": "ypfM1/H/kWfgAB46qfb2Vh/V8l/9iG++XRmNQMm66tK7MyDtZeYl8na8N+IjiHbQkjW9mO9wtMZg2ZFI8kGKAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\curso_ApiTable\\curso_ApiTable.csproj",
   "expectedPackageFiles": [
@@ -54,8 +54,9 @@
     "C:\\Users\\Gonzalo\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\Gonzalo\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Gonzalo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
+    "C:\\Users\\Gonzalo\\.nuget\\packages\\restsharp\\106.10.1\\restsharp.106.10.1.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

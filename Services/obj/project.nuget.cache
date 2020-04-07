@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1KI8YwEQbsTRZk9Nke6k7NYB0PyQUFtFr5kl0wrFX9Vrdfs75pSWdbz/EXGb9dcUc8uAUFhBp9QXIqzmlXDFGw==",
+  "dgSpecHash": "XFmFKoeTHTIehvVjaWAU1oFOk+Vw8DeIK4DKzCKD9p60VXm/PfFGVIajvyGHRIU2sZLkSjVwifFhRDBHlMB5Pg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gonzalo\\Source\\Repos\\curso_ApiTable\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,8 @@
     "C:\\Users\\Gonzalo\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\Gonzalo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Gonzalo\\.nuget\\packages\\restsharp\\106.10.1\\restsharp.106.10.1.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Gonzalo\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

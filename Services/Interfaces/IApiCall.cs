@@ -8,7 +8,7 @@ namespace Services.Interfaces
 {
 	public interface IApiCall
 	{
-		public Task<bool> CheckUserAutorization(string token);
+		public Task<bool> UserIsAuthorized(string token);
 
 	}
 }

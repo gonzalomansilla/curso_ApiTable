@@ -19,9 +19,9 @@ C:\Users\Gonzalo\Source\Repos\curso_ApiTable\Services\bin\Debug\netcoreapp3.1\Mo
 C:\Users\Gonzalo\Source\Repos\curso_ApiTable\Services\bin\Debug\netcoreapp3.1\Common.pdb
 C:\Users\Gonzalo\Source\Repos\curso_ApiTable\Services\bin\Debug\netcoreapp3.1\Model.pdb
 C:\Users\Gonzalo\Source\Repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.csprojAssemblyReference.cache
-C:\Users\Gonzalo\Source\Repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.csproj.CoreCompileInputs.cache
 C:\Users\Gonzalo\Source\Repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfoInputs.cache
 C:\Users\Gonzalo\Source\Repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfo.cs
 C:\Users\Gonzalo\Source\Repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyComplete
 C:\Users\Gonzalo\Source\Repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.dll
 C:\Users\Gonzalo\Source\Repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.pdb
+C:\Users\Gonzalo\Source\Repos\curso_ApiTable\Services\obj\Debug\netcoreapp3.1\Services.csproj.CoreCompileInputs.cache
